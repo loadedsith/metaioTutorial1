@@ -61,19 +61,19 @@ public class ARActivity extends ARViewActivity implements SensorsComponentAndroi
 				MetaioDebug.log(Log.ERROR,"Error loading geometry: "+model2Path);
 			}
 		}
-		String modelSpherePath = AssetsManager.getAssetPath("assets2/sphere.md2");
+		String modelSpherePath = AssetsManager.getAssetPath("assets2/sphere.obj");
 		String modelSphereTexturePath = AssetsManager.getAssetPath("assets2/skySphere1.png");
 		String modelSphereMovieTexturePath = AssetsManager.getAssetPath("assets2/out.alpha.3g2");
 		
 		if(modelSpherePath != null){
 			mSphere = metaioSDK.createGeometry(modelSpherePath);
 			if(mSphere != null){
-				mSphere.setScale(new Vector3d(24.0f,24.0f,24.0f));
+				mSphere.setScale(new Vector3d(2.0f, 2.0f, 2.0f));
 				mSphere.setVisible(false);
 //				mSphere.setTexture(modelSphereTexturePath);
 				mSphere.setMovieTexture(modelSphereMovieTexturePath, true);
 				mSphere.startMovieTexture(true);
-				mSphere.setRotation(new Rotation(new Vector3d((float)(Math.PI/2),0,0)));
+				mSphere.setRotation(new Rotation(new Vector3d( (float)(Math.PI/2) ,0,0)));
 				MetaioDebug.log("loading geometry: ");
 			}else{
 				MetaioDebug.log(Log.ERROR,"Error loading geometry: "+modelSpherePath);
