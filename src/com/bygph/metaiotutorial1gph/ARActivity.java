@@ -45,7 +45,7 @@ public class ARActivity extends ARViewActivity {
 				MetaioDebug.log(Log.ERROR,"Error loading geometry: "+modelPath);
 			}
 		}
-		String model2Path = AssetsManager.getAssetPath("assets1/metaioman2.zip");
+		String model2Path = AssetsManager.getAssetPath("assets1/sailboat.zip");
 		if(model2Path != null)
 		{
 			mMan2 = metaioSDK.createGeometry(model2Path);
