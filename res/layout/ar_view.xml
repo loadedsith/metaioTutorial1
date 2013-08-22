@@ -3,32 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:gravity="center"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/modelButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onManButtonClick"
-            android:text="Man 1" />
-
-        <Button
-            android:id="@+id/model2Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onMan2ButtonClick"
-            android:text="Boat" />
-    
-	</LinearLayout>
-
     <Button
         android:id="@+id/pictureButton"
         android:layout_width="wrap_content"
@@ -55,5 +29,50 @@
         android:layout_centerVertical="true"
         android:onClick="onMarkerlessButtonClick"
         android:text="Markerless" />
-	
+
+    <Button
+        android:id="@+id/orientationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/markerlessButton"
+        android:layout_alignParentRight="true"
+        android:onClick="onOrientationClick"
+        android:text="Orientation" />
+
+    <Button
+        android:id="@+id/model2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IdButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onMan2ButtonClick"
+        android:text="Boat" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/model2Button"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/modelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onManButtonClick"
+            android:text="Man" />
+
+     
+
+        <Button
+            android:id="@+id/modelSphereButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSphereButtonClick"
+            android:text="Sphere" />
+    </LinearLayout>
+
 </RelativeLayout>
